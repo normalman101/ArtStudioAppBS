@@ -30,7 +30,7 @@ CREATE TABLE table_executors
     id                INTEGER PRIMARY KEY AUTOINCREMENT,
     alias             TEXT NOT NULL CHECK ( length(alias) > 0 ),
     registration_date TEXT NOT NULL CHECK ( length(registration_date) > 0 ),
-    personal_file_id REFERENCES table_personal_files (id)
+    personal_file_id  INTEGER REFERENCES table_personal_files (id)
 );
 
 CREATE TABLE table_project_roles

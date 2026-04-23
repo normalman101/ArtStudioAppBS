@@ -1,4 +1,6 @@
-﻿namespace ArtStudioAppBS;
+﻿using System;
+
+namespace ArtStudioAppBS;
 
 class Program
 {
